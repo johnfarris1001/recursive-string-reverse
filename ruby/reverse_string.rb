@@ -1,5 +1,7 @@
 def reverse_string(str)
   # type your code in here
+  return "" if str.length == 0
+  str.slice!(-1) + reverse_string(str)
 end
 
 if __FILE__ == $PROGRAM_NAME
